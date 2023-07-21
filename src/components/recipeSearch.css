@@ -1,0 +1,59 @@
+.searchbox {
+  border: solid 1px black;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  padding-left: auto;
+  padding-right: auto;
+  display: block;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+  margin-bottom: -20px;
+}
+.cardContainer > * {
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.cardText {
+  font-size: 12px;
+}
+
+/* .cardContainer > * > * > * > .cardR__heading-span--1:nth-child(odd) {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.25),
+    rgba(40, 180, 133, 0.85)
+  );
+} */
+
+.cardContainer > *:nth-child(3n-1) > * > * > .cardR__heading-span--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.25),
+    rgba(40, 180, 133, 0.85)
+  );
+}
+
+.cardContainer > *:nth-child(3n) > * > * > .cardR__heading-span--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(41, 152, 255, 0.25),
+    rgba(86, 67, 250, 0.85)
+  );
+}
+
+.cardContainer > *:nth-child(3n-1) > .cardR__side--back-1 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.cardContainer > *:nth-child(3n) > .cardR__side--back-1 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}

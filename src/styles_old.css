@@ -1,0 +1,83 @@
+#SuperWrap {
+  display: flex;
+  width: 100%;
+  margin: 15px auto 35px;
+  flex: 2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Site Wide Margin Properties */
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  min-height: 100px;
+  padding: 30px;
+  background: rgb(17, 15, 15);
+}
+
+/* This moves the logo so that it's not touching the left side */
+@media screen and (max-width: 1040px) {
+  #nav-logo {
+    margin-left: 1rem;
+  }
+}
+
+/* Start Main Container */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  flex-wrap: row;
+  display: flex;
+  margin: auto;
+}
+
+.container > div {
+  /*margin: 100px;*/
+  flex: 1;
+  min-height: 400px;
+}
+
+.one {
+  width: 33%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: white;
+  min-height: 300px;
+  text-align: justify;
+}
+
+.title-note {
+  font-size: 60%;
+  color: #999;
+}
+
+.flex-title {
+  display: flex;
+  align-items: flex-top;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+.title-main {
+  flex-grow: 1;
+}
+
+.flex-title > span {
+  white-space: nowrap;
+}

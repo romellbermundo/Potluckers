@@ -1,0 +1,42 @@
+name: Build and Copy To Server
+
+on:
+  push:
+    branches: [release]
+  pull_request:
+    branches: [release]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm install
+      - run: npm run build
+      - run: git clone https://huynhtk80:${{ secrets.PAT }}@github.com:huynhtk80/project_2_potluckers_server.git target
+      - run: cd target && git checkout release 
+      - run: rm -rf target/public/*
+      - run: cp -r build/* target/public
+      - name: Push Client
+        working-directory: ./target
+        run: |
+          pwd
+          ls -a
+          ls public
+          git remote --verbose
+          git add .
+          git config --global user.email "huynh.tk80@gmail.com"
+          git config --global user.name "huynhtk80"
+          git diff-index --quiet HEAD || git commit -m "Automatic publish from github.com/project"
+          git status
+          git push

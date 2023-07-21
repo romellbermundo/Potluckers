@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.card__description {
+  font-size: 19px;
+}
+
+.movedown {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+.aboutus-container {
+  width: 90%;
+  margin: 30px auto 30px;
+}
+
+.aboutus-main {
+  font-size: 1.5em;
+  width: 52%;
+  /* margin-left: 80px; */
+  float: left;
+  padding-right: 80px;
+}
+.aboutus-main2 {
+  font-size: 1.5em;
+  width: 50%;
+  /* margin-left: 80px; */
+  float: right;
+  /* padding-right: 80px */
+}
+.aboutus-sidebar {
+  font-size: 1.5em;
+  width: 30%;
+  margin-left: 30px;
+  float: left;
+  margin-bottom: 100px;
+}
+.aboutus-sidebar2 {
+  font-size: 1.5em;
+  width: 30%;
+  margin-left: 0px;
+  float: left;
+  margin-bottom: 100px;
+}
+
+.aboutus-main p {
+  font-size: 19px;
+  line-height: 200%;
+  letter-spacing: 0.25px;
+}
+.aboutus-main2 p {
+  font-size: 19px;
+  line-height: 200%;
+  letter-spacing: 0.25px;
+}
+.title-main {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+.footer-container .footer-body {
+  font-size: 15px;
+  margin-top: 100px;
+  width: 90%;
+  margin-left: 80px;
+}
+.footer-container .footer-list {
+  margin-left: 40px;
+}
+
+.footer-body {
+  margin-top: 1000px;
+}
+
+.signup-container {
+  width: 400px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  background: #fff;
+  padding: 40px;
+  margin: 8% auto 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #999;
+  outline-color: none;
+}
+
+.signup-label {
+  color: #1d741b;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+}
+
+.team-logo {
+  width: 120px;
+  margin-top: -120px;
+}
+
+.root {
+  background-image: url(../img/potlucker-header-stew.jpg);
+  background-size: 3000px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.sub-title {
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+.search-btn {
+  margin-left: 20px;
+}
+
+.search-container {
+  text-align: center;
+  border-radius: 20px;
+}
+
+.searchbox {
+  border-radius: 10px;
+}

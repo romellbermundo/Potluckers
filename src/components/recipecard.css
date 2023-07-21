@@ -1,0 +1,101 @@
+.cardR {
+  position: relative;
+  height: auto;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.cardR__side {
+  height: auto;
+  position: relative;
+  box-shadow: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* -webkit-backface-visibility: hidden; */
+  /* backface-visibility: hidden; */
+  border-radius: 3px;
+  overflow: hidden;
+}
+.cardR__side--front {
+  background-color: #fff;
+}
+
+.cardR__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.cardR__picture {
+  background-size: cover;
+  height: 20rem;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.cardR__heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  top: 9rem;
+  right: 1rem;
+  width: 90%;
+}
+.cardR__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.cardR__heading-span--1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 185, 0, 0.25),
+    rgba(255, 119, 48, 0.85)
+  );
+}
+
+.cardR__details {
+  padding: 3rem;
+  min-height: 300px;
+}
+.cardR__details ul {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+}
+.cardR__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.cardR__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+.cardR__cta {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 4rem 3rem 4rem;
+}
+.cardR__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.cardR__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.cardR__price-value {
+  font-size: 4rem;
+  font-weight: 100;
+}

@@ -1,0 +1,31 @@
+div .footer-row{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: 3em;
+    position: relative;
+    bottom: 0;
+    width: inherit;
+    background-color: #333;
+    
+}
+
+/* div .container{
+    background-color: black;
+} */
+
+/* body {
+margin: 0;
+padding: 0;
+} */
+
+div .footer-container{
+    margin-bottom: 6em;
+}
+
+.col-sm {
+
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+}
