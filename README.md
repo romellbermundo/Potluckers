@@ -25,110 +25,226 @@ Where Awesome Happens!
 &nbsp;
 
 
-## Table of Contents
+# 🍽️ Potluckers
 
-- [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Kamikaze Cheese Team Members](#kamikaze-cheese-team-members)
-- [Getting Started with Create React App](#getting-started-with-create-react-app)
-- [Available Scripts](#available-scripts)
-  - [`npm start`](#npm-start)
-  - [`npm test`](#npm-test)
-  - [`npm run build`](#npm-run-build)
-  - [`npm run eject`](#npm-run-eject)
-- [Learn More](#learn-more)
-  - [Code Splitting](#code-splitting)
-  - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
-  - [Making a Progressive Web App](#making-a-progressive-web-app)
-  - [Advanced Configuration](#advanced-configuration)
-  - [Deployment](#deployment)
-  - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
+**A collaborative full-stack application designed to make potluck planning simple and organized.**
 
-## Introduction
+Potluckers helps groups organize shared meals by bringing food planning, responsibilities, dietary considerations, and recipe discovery into one application.
 
-Organizing potlucks is hard. You need to know allergies, preferences, cutlery, clean-up crew and much more. What if I tell you that there is an app to make you life easier? Well, we present to you the Potlocker app. This application is made by the Kamikaze Cheese Team and our goal is to make organizing potlucks easy and convenient. Our team core value is food and doing good. Potlocker will allow you to add/remove foods from you potlock list. In addition, you can look up recipes for the food your are bringing, organize who brings in the cutlery, organize who cleans-up after the event, exclude certain types of food because of allergies and other additional features. We hope that by using this app, eating food with the people you cherish can create great experiences they can never forget.
+---
 
-## Technologies Used
+## 📑 Table of Contents
 
-    + Core: Node.js Javascript HTML CSS MongoDB Express.js
-    + API: Spoonacular API
-    + Collaboration: Discord Github Zoom Trello Basecamp Figma
+- [About the Project](#-about-the-project)
+- [The Problem](#-the-problem)
+- [Features](#-features)
+- [Technology](#️-technology)
+- [Application Concept](#️-application-concept)
+- [Getting Started](#-getting-started)
+- [Team](#-team)
+- [Development Process](#-development-process)
 
-## Kamikaze Cheese Team Members
+---
 
-- Kshitija Shirsathe
-- Romell Bermundo
-- Timothy Huynh
-- Tyler Sartison
+## 📖 About the Project
 
-## Getting Started with Create React App
+Planning a potluck can quickly become complicated.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Who is bringing what? Does someone have a food allergy? Do we have enough utensils? Who is responsible for cleanup?
 
-## Available Scripts
+**Potluckers** provides a central place for participants to coordinate the different parts of a potluck while making it easier to discover and organize food ideas.
 
-In the project directory, you can run:
+The application combines a React frontend with Node.js, Express, MongoDB, and the Spoonacular API to create a full-stack potluck planning experience.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💡 The Problem
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Organizing a potluck involves more than deciding who brings a dish.
 
-### `npm test`
+Groups need to coordinate:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- food and dishes
+- participant contributions
+- dietary restrictions and allergies
+- recipes
+- cutlery and supplies
+- cleanup responsibilities
 
-### `npm run build`
+Potluckers brings these different responsibilities together into one application so participants can spend less time organizing and more time enjoying the event.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Potluckers provides tools for organizing different parts of a shared meal.
 
-### `npm run eject`
+### 🍲 Food Planning
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create and manage food items for the potluck so participants can see what is being brought.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔎 Recipe Discovery
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Search for recipes and food ideas using information provided by the **Spoonacular API**.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🥗 Dietary Considerations
 
-## Learn More
+Keep dietary restrictions and allergies in mind when planning dishes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🍴 Supplies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Coordinate shared supplies such as plates, utensils, and other items needed for the event.
 
-### Code Splitting
+### 🧹 Responsibilities
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Organize additional responsibilities such as cleanup and other shared tasks.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Technology
 
-### Making a Progressive Web App
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- JavaScript
+- React
+- HTML
+- CSS
 
-### Advanced Configuration
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Node.js
+- Express.js
 
-### Deployment
+### Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- MongoDB
 
-### `npm run build` fails to minify
+### API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Spoonacular API
+
+### Development & Collaboration
+
+- Git
+- GitHub
+- Figma
+- Trello
+- Basecamp
+- Discord
+- Zoom
+
+---
+
+## 🏗️ Application Concept
+
+```text
+                    USER
+                      │
+                      ▼
+              REACT APPLICATION
+                      │
+        ┌─────────────┼─────────────┐
+        │             │             │
+        ▼             ▼             ▼
+   FOOD PLANNING    RECIPES    RESPONSIBILITIES
+        │             │             │
+        └─────────────┼─────────────┘
+                      │
+                      ▼
+               NODE / EXPRESS
+                      │
+             ┌────────┴────────┐
+             │                 │
+             ▼                 ▼
+          MONGODB        SPOONACULAR API
+```
+
+The application combines frontend interaction, backend services, persistent data, and an external recipe API to support the potluck planning workflow.
+
+---
+
+## 🚀 Getting Started
+
+### Requirements
+
+Make sure the following are installed:
+
+- Node.js
+- npm
+- Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/huynhtk80/project_2_potluckers.git
+cd project_2_potluckers
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the application
+
+```bash
+npm start
+```
+
+The development application will normally be available at:
+
+```text
+http://localhost:3000
+```
+
+> Additional configuration may be required for database connectivity and external API access.
+
+---
+
+## 👥 Team
+
+Potluckers is developed by the **Kamikaze Cheese Team**:
+
+- **Kshitija Shirsathe**
+- **Romell Bermundo**
+- **Timothy Huynh**
+- **Tyler Sartison**
+
+Each team member contributes to the design, development, testing, and integration of the application.
+
+---
+
+## 🔄 Development Process
+
+Potluckers is built collaboratively using an iterative development process.
+
+### Planning
+
+The team identifies the core problems involved in organizing a potluck and translates them into application requirements and user features.
+
+### Design
+
+Figma is used to explore the interface and user experience before implementation.
+
+### Development
+
+Features are developed using React, Node.js, Express, MongoDB, and external API integration.
+
+### Collaboration
+
+Git and GitHub are used for source control and collaborative development, while Trello, Basecamp, Discord, and Zoom support task management and team communication.
+
+### Integration
+
+Frontend, backend, database, and API functionality are brought together to create the complete Potluckers experience.
+
+---
+
+## 🎯 Project Goal
+
+Our goal is to build a practical full-stack application that makes organizing potlucks easier while applying modern software development practices in a collaborative environment.
+
+Potluckers gives our team the opportunity to work with:
+
+**Frontend Development · Backend Development · Databases · APIs · UI/UX · Git · Team Collaboration**
